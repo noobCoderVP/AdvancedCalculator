@@ -118,3 +118,28 @@ a:hover
     font-size: 15px;
     width: 14vw;
 }
+
+@media only screen and (max-width: 500px)
+{
+    nav>li
+    {
+    display: block;
+    font-size: 20px;
+    }
+    #calc
+    {
+        width: 90vw;
+    }
+    button 
+    {
+        width: 20vw;
+    }
+    #text
+    {
+        width: 88vw;
+    }
+    #mode
+    {
+        width: 30vw;
+    }
+}
