@@ -119,7 +119,7 @@ a:hover
     width: 14vw;
 }
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 1081px)
 {
     nav>li
     {
