@@ -234,3 +234,26 @@ document.getElementById("mode").addEventListener("click", function()
         document.getElementById("calc").style.border='5px outset black';
     }
 });
+
+window.addEventListener("keydown", function(e)
+{
+    console.log(e.key);
+    let k=String(e.key);
+    if(k==0 || k==1 || k==2|| k==3|| k==4|| k==5|| k==6|| k==7|| k==8|| k==9 || k==".")
+    {
+        if(a.textContent.length<11)
+        {
+            a.textContent+=k;
+        }
+        else
+        {
+            alert("maximum limit of digit is reached!");
+        }
+    }
+    else if(k=="Backspace")
+    {
+        b=a.textContent;
+        c = b.substring(0,b.length-1);
+        a.textContent=c;
+    }
+});
